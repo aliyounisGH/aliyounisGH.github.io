@@ -1,0 +1,226 @@
+@import url(http://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here|Nothing+You+Could+Do|Covered+By+Your+Grace|Just+Another+Hand);
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+html, body {
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+header {
+    margin-bottom: 1em;
+}
+
+.page {
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    float: left;
+    /*text-shadow:1px 1px 2px #f0f0f0;*/
+}
+
+/*.page.active {
+    display: block;
+}*/
+
+#home {
+        background:url('flagDC.png') white no-repeat 50% 10%;
+        background-size: contain;
+        text-align: center;
+}
+
+.navList, .navItems {
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.headerHome {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 10em;
+    margin: 0.15em 0 0 1.8em;
+    letter-spacing: 1.8em;
+    height: 1.25em;
+}
+
+.subheaderHome {
+    display: inline;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 7em;
+}
+
+.homeNav {
+    margin-top: 7%;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 7em;
+}
+
+.navItems {
+    margin-left: 0.5em;
+}
+
+li.navItems:first-child {
+    margin-left: 0;
+}
+
+
+/* .............. */
+
+header {
+    height: 22%;
+    border: solid 1px #D00000;
+    background-color: #D00000;
+    font-color: black;
+    font-family: 'Just Another Hand', cursive;
+}
+
+.subheaderFood {
+    display: inline;
+    float: left;
+    font-size: 7em;
+    overflow: none;
+    margin-top: 0.25em;
+    margin-left: 0.25em;
+}
+
+.otherTabs {
+    display: inline;
+    float: right;
+}
+
+.foodPageNavList, .tabItems {
+    list-style-type: none;
+    padding: 0;
+    /*display: inline;*/
+    float: right;
+    clear: both;
+    margin-top: 0.15em;
+    margin-right: 0.5em;
+}
+
+#topLink {
+    margin-top: 0;
+}
+
+.foodNavLinks {
+    font-size: 2em;
+}
+
+.foodHeader::after {
+
+}
+
+div.adsGallery {
+    width: 100%;
+    margin: 15px 0px 0 0px;
+}
+
+figure {
+  width: 120px;
+  float: left;
+  margin: 0 1px 0 0;
+  background: white;
+  border: 10px solid white;
+  -webkit-box-shadow: 0 3px 10px #ccc;
+  -moz-box-shadow: 0 3px 10px #ccc;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 1s ease;
+  position: relative;
+}
+
+figure:first-child {
+    margin-left: -130px;
+}
+
+figcaption {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-family: 'Just Another Hand', cursive;
+  overflow: visible;
+}
+
+figure img {
+  width: 100%; /* Scale down */
+}
+
+figure:hover {
+  -webkit-transform: rotate(-1deg); -moz-transform: rotate(1deg);
+  -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
+}
+
+figure:focus {
+  outline: none;
+  -webkit-transform: rotate(-3deg) scale(2.5); -moz-transform: rotate(-3deg) scale(2.5);
+   -webkit-box-shadow: 0 3px 10px #666; -moz-box-shadow: 0 3px 10px #666;
+  z-index: 9999;
+}
+
+form {
+    margin-top: 14%;
+}
+
+
+table, tbody {
+    width: 50%;
+}
+
+th {
+    text-align: left;
+    color: #D00000;
+    font-family: 'Just Another Hand';
+}
+
+table {
+    margin-top: 1em;
+}
+
+td {
+    font-family: 'Just Another Hand', cursive;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+}
+
+.cuisine, .price, .style, .reservations, .hours {
+    color: gray;
+}
+
+#entries tr a {
+    text-decoration: none;
+    color: gray;
+}
+
+.bullet {
+    height: 0.4em;
+    width: 0.4em;
+    border-radius: 50%;
+    background-color: #D00000;
+}
+
+.bulletCol {
+    width: 1%;
+}

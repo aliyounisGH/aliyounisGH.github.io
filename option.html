@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14th St NW2</title>
+    <link rel="stylesheet" href="alternative.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="api.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <section class="page active" id="home">
+        <h1 class="headerHome">DC</h1>
+        <h2 class="subheaderHome">14th St NW</h2>
+        <nav class="homeNav">
+            <ul class="navList">
+                <li class="navItems"><a class="links" href="#about">about us</a></li>
+                <li class="navItems"><a class="links" href="#food">food</a></li>
+                <li class="navItems"><a class="links" href="#out">out&amp;about</a></li>
+                <li class="navItems"><a class="links" href="#blog">blog</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section class="page" id="food">
+        <header id="foodHeader" class="cf">
+            <h2 class="subheaderFood">food</h2>
+            <nav class="otherTabs">
+                <ul class="foodPageNavList">
+                    <li class="tabItems"><a class="links foodNavLinks" id="topLink" href="#home">home</a></li>
+                    <li class="tabItems"><a class="links foodNavLinks" href="#about">about us</a></li>
+                    <li class="tabItems"><a class="links foodNavLinks" href="#out">out&amp;about</a></li>
+                    <li class="tabItems"><a class="links foodNavLinks" href="#blog">blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="adsGallery">
+            <figure tabindex="1">
+                <img src="ads/falafel.png" alt="amsterdam falafel">
+                <figcaption>amsterdam falafel</figcaption>
+            </figure>
+            <figure tabindex="2">
+                <img src="ads/barcelona.png" alt="barcelona">
+                <figcaption>barcelona</figcaption>
+            </figure>
+            <figure tabindex="3">
+                <img src="ads/blackorange.png" alt="black orange">
+                <figcaption>black&amp;orange</figcaption>
+            </figure>
+            <figure tabindex="4">
+                <img src="ads/cork.png" alt="cork">
+                <figcaption>cork</figcaption>
+            </figure>
+            <figure tabindex="5">
+                <img src="ads/diplomate.png" alt="le diplomate">
+                <figcaption>le diplomate</figcaption>
+            </figure>
+            <figure tabindex="6">
+                <img src="ads/estadio.png" alt="estadio">
+                <figcaption>estadio</figcaption>
+            </figure>
+            <figure tabindex="7">
+                <img src="ads/lupo.png" alt="lupo verde">
+                <figcaption>lupo verde</figcaption>
+            </figure>
+            <figure tabindex="8">
+                <img src="ads/noodles.png" alt="dc noodles">
+                <figcaption>dc noodles</figcaption>
+            </figure>
+            <figure tabindex="9">
+                <img src="ads/PearlDive.png" alt="pearl dive">
+                <figcaption>pearl dive</figcaption>
+            </figure>
+            <figure tabindex="10">
+                <img src="ads/ted.png" alt="teds bulletin">
+                <figcaption>ted's</figcaption>
+            </figure>
+        </div>
+
+        <form action="#" class="restaurantFilter">
+            <select name="cuisine" id="cuisine">
+                <option value="all" selected>cuisine</option>
+                <option value="spanish">spanish</option>
+                <option value="french">french</option>
+                <option value="american">american</option>
+                <option value="asian">asian</option>
+                <option value="african">african</option>
+                <option value="italian">italian</option>
+            </select>
+            <select name="style" id="style">
+                <option value="all" selected>style</option>
+                <option value="business">business</option>
+                <option value="casual">casual</option>
+            </select>
+            <select name="price" id="price">
+                <option value="all" selected>price</option>
+                <option value="$">$</option>
+                <option value="$$">$$</option>
+            </select>
+            <select name="hours" id="hours">
+                <option value="all" selected>hours</option>
+                <option value="regular">regular</option>
+                <option value="late">late</option>
+            </select>
+            <button value="button" id="displayAll">show all</button>
+        </form>
+
+        <table class="restaurants">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th width="10%">NAME</th>
+                    <th width="7%">CUISINE</th>
+                    <th width="7%">STYLE</th>
+                    <th width="7%">PRICE</th>
+                    <th width="10%">HOURS</th>
+                    <th width="7%">RESERVATIONS</th>
+                </tr>
+            </thead>
+            <tbody id="entries">
+                <tr data-all="all" data-cuisine="american" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Churchkey</td><td class="col cuisine">american</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular hours</td><td class="col reservations"><a>book it</a></td></tr>
+                <tr data-all="all" data-cuisine="african" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Ghana Cafe</td><td class="col cuisine">african</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular hours</td><td class="col reservations"><a>book it</a></td></tr>
+                <tr data-all="all" data-cuisine="asian" data-style="casual" data-price="$$"  data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">B Too</td><td class="col cuisine">asian</td><td class="col style">casual</td><td class="col price">$$</td><td class="col hours">regular hours</td><td class="col reservations"><a href="http://www.opentable.com/opentables.aspx?m=9&p=2&d=3/30/2014%208:30:00%20PM&r=102241&t=rest&rp=opentables.aspx" target="_blank">book it</a></td></tr>
+                <tr data-all="all" data-cuisine="spanish" data-style="casual" data-price="$$" data-hours="late"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Masa14</td><td class="col cuisine">spanish</td><td class="col style">casual<td class="col price">$$</td><td class="col hours">open late</td><td class="col reservations"><a href="http://www.opentable.com/opentables.aspx?t=rest&r=35695&m=9&p=2&d=3/31/2014%208:30:00%20PM&scpref=100" target="_blank">book it</a></td></tr>
+                <tr data-all="all" data-cuisine="spanish" data-style="casual" data-price="$" data-hours="late"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">El Centro</td><td class="col cuisine">spanish</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">open late</td><td class="col reservations"><a href="http://www.opentable.com/opentables.aspx?t=rest&r=61405&m=9&p=2&d=3/31/2014%209:00:00%20PM&scpref=100" target="_blank">book it</a></td></tr>
+                <tr data-all="all" data-cuisine="american" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Drafting Table</td><td class="col cuisine">american</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular</td><td class="col reservations"><a>book it</a></td></tr>
+                <tr data-all="all" data-cuisine="italian" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Ghibellina</td><td class="col cuisine">italian</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular</td><td class="col reservations"><a href="http://ghibellina.com/hours-reservations/" target="_blank">book it</a></td></tr>
+                <tr data-all="all" data-cuisine="spanish" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Diego</td><td class="col cuisine">spanish</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular</td><td class="col reservations"><a href="http://www.opentable.com/opentables.aspx?t=rest&r=117499&m=9&p=2&d=3/31/2014%209:00:00%20PM&scpref=100" target="_blank">book it</a></td></tr>
+                <tr data-all="all" data-cuisine="asian" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Rice</td><td class="col cuisine">asian</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular</td><td class="col reservations"><a>book it</a></td></tr>
+                <tr data-all="all" data-cuisine="american" data-style="casual" data-price="$" data-hours="regular"><td class="bulletCol"><div class="bullet"></div></td><td class="col restName">Matchbox</td><td class="col cuisine">american</td><td class="col style">casual</td><td class="col price">$</td><td class="col hours">regular</td><td class="col reservations"><a href="http://www.opentable.com/opentables.aspx?m=9&p=2&d=3/31/2014%209:00:00%20PM&r=96361&t=rest&rp=opentables.aspx" target="_blank">book it</a></td></tr>
+            </tbody>
+        </table>
+
+        <!-- this is the interface to google places  -->
+        <div id="mapCanvas"></div>
+        <!-- this is end of the interface to google places  -->
+
+    </section>
+
+    <!-- this is the blog tab -->
+
+        <section class="page" id="blog">
+        <header id="foodHeader" class="cf">
+            <h2 class="subheaderFood">blog</h2>
+            <nav class="otherTabs">
+                <ul class="foodPageNavList">
+                    <li class="tabItems"><a class="links foodNavLinks" id="topLink" href="#home">home</a></li>
+                    <li class="tabItems"><a class="links foodNavLinks" href="#food">food</a></li>
+                    <li class="tabItems"><a class="links foodNavLinks" href="#out">out&amp;about</a></li>
+                    <li class="tabItems"><a class="links foodNavLinks" href="#fitness">fitness</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <div class="blogList">
+        <h3>what's on your mind 14th St?</h3>
+        <form autocomplete="off">
+            <input type="text" name="toDoItem" maxlength="100" placeholder="tweet it here" id="uniqueTextInput">
+            <button id="addText">+</button>
+
+            <ul id="blogItems">
+
+            </ul>
+
+            <!-- <button id="reset">reset</button> -->
+
+        </form>
+    </div>
+
+           <div class="blogPic">
+            <figure>
+                <img src="14thStreetNW.jpg" alt="14th street">
+                <figcaption>14th Street NW</figcaption>
+            </figure>
+        </div>
+
+
+
+    </section>
+
+<!-- this is the general jquery script -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+<!-- this is the smooth scrolling plugin -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.11/jquery.scrollTo.min.js"></script>
+
+<!-- this is the main google API -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<!-- this is the google places API -->
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+
+<!-- this is my general js file -->
+<script src="main.js"></script>
+
+<!-- this is my google places API js file -->
+<script src="apiscript.js"></script>
+
+<!-- this is my blog js file -->
+<script src="blog.js"></script>
+
+</body>
+</html>
